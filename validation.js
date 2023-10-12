@@ -17,24 +17,46 @@ form.addEventListener("submit", (e) => {
 
     if (firstName.value === "") {
         messages.push("First name is required");
+        firstName.style.borderColor = "red";
+        firstName.style.borderRadius = "0";
+        firstName.style.outlineWidth = "0";
     }
     if (lastName.value === "") {
         messages.push("Last name is required");
+        lastName.style.borderColor = "red";
+        lastName.style.borderRadius = "0";
+        lastName.style.outlineWidth = "0";
     }
     let phoneRegex = /^\+\d{2}\s\d{3}\s\d{3}\s\d{3}$/;
     if (!phoneRegex.test(phone.value)) {
+        phone.style.borderColor = "red";
+        phone.style.borderRadius = "0";
+        phone.style.outlineWidth = "0";
         messages.push("Wrong phone number format");
     }
     if (email.value === "") {
+        email.style.borderColor = "red";
+        email.style.borderRadius = "0";
+        email.style.outlineWidth = "0";
         messages.push("Email is required");
     }
     if (address.value === "") {
+        address.style.borderColor = "red";
+        address.style.borderRadius = "0";
+        address.style.outlineWidth = "0";
         messages.push("Address is required");
+        
     }
     if (country.value === "") {
+        country.style.borderColor = "red";
+        country.style.borderRadius = "0";
+        country.style.outlineWidth = "0";
         messages.push("Country is required");
     }
     if (city.value === "") {
+        city.style.borderColor = "red";
+        city.style.borderRadius = "0";
+        city.style.outlineWidth = "0";
         messages.push("City is required");
     }
     if (document.getElementById("state").value === '') {
