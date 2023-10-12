@@ -1,5 +1,5 @@
 # ddroidd_ Frontend Autumn-Winter Bootcamp 2023 Web Challenge
-##This is a web-application for 1920x1080px screen size
+## This is a web-application for 1920x1080px screen size
 
 ### 1. STEP ONE - Click the "Join Us" button
 Click on the "Join Us" button to get started.
