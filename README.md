@@ -12,8 +12,7 @@ Fill out the following fields in the form:
 4. Email address
 5. Address
 6. Country
-7. City
-   
+7. City  
 * For the Country and City fields it will autopopulate based on the selections. *
 * Please make sure you fill out the information in the same format as provided in the placeholder. *
 * In case of an error you will get a list of the fields that need to be addressed. *
