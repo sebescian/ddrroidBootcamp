@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Application Form</title>
+  </head>
+  <body>
+    <header class="d-flex align-items-center justify-content-between px-5 gap-3">
+      <div class="logoWrapper">
+        <a href="index.html"><img src="/assets/img/ddroidd_logo.svg"></a>
+      </div>
+      <h1 class="flex-grow-1 text-center">Autumn - Winter Bootcamp</h1>
+    </header>
+    <main>
+        <section id="applicationForm" class="applicationForm d-grid">
+            <h2 class="text-center">Application Form</h2>
+            <form id="submitForm" class="d-grid" action="/" method="get">
+                <div class="row">
+                <div class="col-12">
+                    <h3 class="formHeading">Contact Information</h3>
+                </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label class="required" for="firstName">First Name</label>
+                      <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First name">
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label class="required" for="lastName">Last Name</label>
+                      <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last name">
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                        <label class="required" for="phone">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="+40 711 111 111">
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                        <label class="required" for="email">Email</label>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="john@doe.com">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <h3 class="formHeading">Address</h3>
+                </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label class="required" for="address1">Address Line 1</label>
+                      <input type="text" class="form-control" id="address1" name="address1" placeholder="Street name & number">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="address2">Address Line 2</label>
+                      <input type="text" class="form-control" id="address2" placeholder="Suite, apartment" name="address2">
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label class="required" for="country">Country</label>
+                      <select class="form-control" id="country" name="country">
+                        <option value="" >Country</option>
+                      </select>
+                      <div class="selectCaret"><img src="assets/img/caret.svg"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="state">State</label>
+                      <select class="form-control" id="state" name="state">
+                        <option value="" disabled selected>State</option>
+                      </select>
+                      <div class="selectCaret"><img src="assets/img/caret.svg"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label class="required" for="city">City</label>
+                      <select class="form-control" id="city" name="city">
+                        <option value="" disabled selected>City</option>
+                      </select>
+                      <div class="selectCaret"><img src="assets/img/caret.svg"></div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-content-center">
+                    <div id="validationErrors" class="validationErrors">
+                    </div>
+                    <button class="submitBtn joinBtn">Join Us</button>
+                  </div>
+                </div>
+
+              </form>
+        </section>
+    </main>
+    <footer class="d-flex gap-3 align-items-center justify-content-center">
+      <span>Come to the dark side... we have</span>
+      <img src="/assets/img/cookies.svg">
+    </footer>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/validation.js"></script>
+    <script defer src="/apidata.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
